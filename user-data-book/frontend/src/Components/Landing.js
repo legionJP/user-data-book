@@ -26,8 +26,8 @@ function Landing(props) {
       <div className="landing-page">
         <div className="landing-div">
           <div className="landing-div-header">
-            <p>Welcome to</p>
-            <h2>UserLogger For U</h2>
+            <p> Welcome To </p>
+            <h2>User Data Book </h2>
           </div>
           <div className="landing-div-footer">
             <Grid
