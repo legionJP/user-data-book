@@ -68,7 +68,7 @@ function Login() {
             onChange={handleChange}
           />
           <small id="emailHelp" className="form-text text-muted">
-            We'll never share your email with anyone else.
+            We never share your password and email with others.
           </small>
         </div>
         <div className="form-group">
