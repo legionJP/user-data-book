@@ -62,7 +62,7 @@ function Login() {
             className="form-control"
             id="exampleInputEmail1"
             aria-describedby="emailHelp"
-            placeholder="Enter email"
+            placeholder="Enter your email"
             name="email"
             value={userDetails.email}
             onChange={handleChange}
@@ -77,7 +77,7 @@ function Login() {
             type="password"
             className="form-control"
             id="exampleInputPassword1"
-            placeholder="Password"
+            placeholder=" Enter Password"
             name="password"
             value={userDetails.password}
             onChange={handleChange}
