@@ -43,7 +43,7 @@ code {
 .landing-div-header p {
   font-size: 1.5rem;
   font-weight: 200;
-  color: gray;
+  color: rgb(81, 74, 74);
 }
 
 .landing-div-footer {
@@ -101,8 +101,8 @@ code {
   align-self: flex-start;
 }
 .error-dailog {
-  color: #721c24;
-  background-color: #f8d7da;
+  color: #8a121e;
+  background-color: #ddafb3;
   border-color: #f5c6cb;
 }
 .nav {
@@ -163,7 +163,7 @@ code {
 
 .creattable-header {
   font-size: 1rem;
-  color: grey;
+  color: rgb(151, 70, 70);
   width: auto;
   margin: 30px;
 }
@@ -208,21 +208,21 @@ code {
 .search-container {
   width: 50%;
   margin: 30px;
-  background-color: #e7ebf0;
+  background-color: #779ac5;
   height: 300px;
   padding-top: 10px;
   border-radius: 10px;
 }
 
 .search-bar {
-  width: 60%;
+  width: 40%;
   align-items: center;
   border: 1px black;
   display: flex;
-  height: 50px;
+  height: 40px;
   margin: 10px;
-  background-color: white;
-  border-radius: 5px;
+  background-color: rgb(169, 191, 221);
+  border-radius: 1px;
 }
 
 .search-bar input {
@@ -249,4 +249,6 @@ code {
 .filter-row-entity-name {
   width: 40%;
 }
-
+.tbody-head th{
+  background-color: #779ac5 !important;
+} 
