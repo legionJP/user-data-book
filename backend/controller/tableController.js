@@ -8,7 +8,7 @@ import generateToken from "../utils/token.js"
 const addTable = async (req, res) => {
     const tableNameToAdd = req.params.tableName
     if (!tableNameToAdd || tableNameToAdd === '') {
-        return res.status(400).json({ message: "Wrong/Empty Table Name" })
+        return res.status(400).json({ message: "Wrong/Empty Table Format Name" })
     }
     var { _id, email, name, tableName = [] } = req.user
     try {
@@ -25,7 +25,7 @@ const addTable = async (req, res) => {
 const deleteTable = async (req, res) => {
     const tableNameToDelete = req.params.tableName
     if (!tableNameToDelete || tableNameToDelete === '') {
-        return res.status(400).json({ message: "Wrong/Empty Table Name" })
+        return res.status(400).json({ message: "Wrong/Empty Table format Name" })
     }
     var { _id, email, name, tableName = [] } = req.user
     try {
