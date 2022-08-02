@@ -24,7 +24,7 @@ function Dashboard() {
       <div className="search-bar" style={{ boxShadow: "rgba(0, 0, 0, 0.16) 0px 1px 4px" }}>
         <SearchIcon style={{ marginLeft: "10px" }} />
         <input type="text" name="tablename" value={searchProperties.searchText}
-          placeholder="Enter Name of Table to search" onChange={handleSearchChange}
+          placeholder="Enter Table Name to search" onChange={handleSearchChange}
         ></input>
       </div>
 
