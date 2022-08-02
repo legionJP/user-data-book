@@ -15,7 +15,7 @@ function App() {
         <Route path="/create-table" element={<Header><CreateTable /></Header>} />
       </Routes>
     </>
-  );
+  );  
 }
 
 export default App;
