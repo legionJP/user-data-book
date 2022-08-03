@@ -21,10 +21,10 @@ function Dashboard() {
   }
   return (
     <div className="dashboard">
-      <div className="search-bar" style={{ boxShadow: "rgba(0, 0, 0, 0.16) 0px 1px 4px" }}>
+      <div className="search-bar" style={{ boxShadow: "rgba(0, 0, 0, 0.16) 0px 1px 4px", float:"right", backgroundColor:"lightblue", width:"27%" }}>
         <SearchIcon style={{ marginLeft: "10px" }} />
-        <input type="text" name="tablename" value={searchProperties.searchText}
-          placeholder="Enter Table Name to search" onChange={handleSearchChange}
+        <input style={{backgroundColor:"lightblue"}} type="text" name="tablename" value={searchProperties.searchText}
+          placeholder="Enter Name of Table to search" onChange={handleSearchChange}
         ></input>
       </div>
 
