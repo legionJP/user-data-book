@@ -13,7 +13,7 @@ function TableCard({ tableName, showIcon = true, showDelete = true, change, setC
     }
   }
   return (
-    <Grid className="card" style={{ height: "100px", width: "18rem", display: "flex", placeContent: "center", boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px" }}>
+    <Grid className="card" style={{ height: "75px", width: "11rem",flexDirection:"row-reverse", alignItems:"center", backgroundColor:"skyblue" , display: "flex", placeContent: "center", boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px" }}>
       {showDelete && <div style={{ textAlign: "right", marginRight: "10px" }}>
         <DeleteOutlineIcon color="error" style={{ cursor: "pointer" }} onClick={onClickDeleteButton} />
       </div>}
@@ -26,4 +26,4 @@ function TableCard({ tableName, showIcon = true, showDelete = true, change, setC
   );
 }
 
-export default TableCard;
+export default TableCard;  
