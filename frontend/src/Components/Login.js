@@ -51,12 +51,12 @@ function Login() {
   return (
     <div className="login-signup">
       <div className="header">
-        <h1>Login</h1>
+        <h1 style={{color:"darkgreen"}}>Login</h1>
       </div>
       {error.isError && <div className="alert error-dailog">{error.errorMessage}</div>} 
       <div className="login-signup-form">
         <div className="form-group">
-          <label htmlFor="exampleInputEmail1">Email address</label>
+          <label htmlFor="exampleInputEmail1"> Enter Email address</label>
           <input
             type="email"
             className="form-control"
@@ -64,6 +64,7 @@ function Login() {
             aria-describedby="emailHelp"
             placeholder="Enter your email"
             name="email"
+            style={{backgroundColor:"lightblue"}}
             value={userDetails.email}
             onChange={handleChange}
           />
@@ -72,13 +73,14 @@ function Login() {
           </small>
         </div>
         <div className="form-group">
-          <label htmlFor="exampleInputPassword1">Password</label>
+          <label htmlFor="exampleInputPassword1"> Enter Password</label>
           <input
             type="password"
             className="form-control"
             id="exampleInputPassword1"
             placeholder=" Enter Password"
             name="password"
+            style={{backgroundColor:"lightblue"}}
             value={userDetails.password}
             onChange={handleChange}
           />
