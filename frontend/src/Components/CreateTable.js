@@ -9,7 +9,7 @@ function CreateTable() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (GetTablesFromToken()?.includes(tableDetails)) {
-      // ::ERROR already table exists
+      // ::ERROR already a table exists
     } else {
       const response = await API.addTable(tableDetails)
       if (response.status === 201) {
@@ -20,9 +20,9 @@ function CreateTable() {
   };
   return (
     <div>
-      <div className="creattable-div" style={{ minHeight: "50vh", padding: "10px", boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px" }}>
+      <div className="creattable-div" style={{ minHeight: "40vh", width:"70vmin", padding: "10px", boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px" }}>
         <div className="creattable-header">
-          <h3 style={{ textAlign: "center" }}>
+          <h3 style={{ textAlign: "center",color:"darkgreen" }}>
             Create Table
           </h3>
         </div>
@@ -34,7 +34,7 @@ function CreateTable() {
               id="tablename"
               placeholder="Enter Table Name"
               name="tableName"
-              style={{ width: "100%" }}
+              style={{ width: "100%", backgroundColor:"lightblue" }}
               value={tableDetails}
               onChange={(e) => { setTableDetails(e?.target?.value) }}
             />
@@ -42,7 +42,7 @@ function CreateTable() {
           <div style={{ textAlign: "center" }}>
             <Button
               variant="contained"
-              color="success"
+              color="primary"
               onClick={handleSubmit}
               style={{ margin: "20px auto" }}
             >
