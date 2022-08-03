@@ -23,11 +23,11 @@ function Landing(props) {
   }
 
   return (
-      <div className="landing-page">
+      <div style={{backgroundColor:"gainsboro"}} className="landing-page">
         <div className="landing-div">
           <div className="landing-div-header">
-            <p>Welcome to</p>
-            <h2>User Data Book</h2>
+            <p> hey! Welcome to</p>
+            <h2 style={{color:"darkblue"}}>User Data Book</h2>
           </div>
           <div className="landing-div-footer">
             <Grid
@@ -41,11 +41,11 @@ function Landing(props) {
               container
               spacing={4}
             >
-              <Grid item sm={6} xs={12} >
-                <Button variant="contained" color="success" startIcon={<LoginIcon />} onClick={handleLoginCLick}>Login</Button>
+<Grid item sm={6} xs={12} >
+                <Button variant="contained" color="primary" startIcon={<LoginIcon />} onClick={handleLoginCLick}>Login</Button>
               </Grid>
               <Grid item sm={6} xs={12} >
-                <Button variant="outlined" color="success" startIcon={<HowToRegIcon />} onClick={handleSigninCLick}>Signup</Button>
+                <Button variant="contained" color="primary" startIcon={<HowToRegIcon />} onClick={handleSigninCLick}>Signup</Button>
               </Grid>
             </Grid>
           </div>
@@ -54,4 +54,4 @@ function Landing(props) {
   );
 }
 
-export default Landing;
+export default Landing;               
