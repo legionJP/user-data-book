@@ -35,7 +35,7 @@ function Signup() {
     {
       setError({
         isError:true,
-        errorMessage:"fill all the details"
+        errorMessage:" Please fill all details"
       })
         setTimeout(()=>{setError({
           isError:false,
@@ -63,71 +63,75 @@ function Signup() {
     }
     } 
   };
-  return (
-    <div className="login-signup">
-      <div className="header">
-        <h1>Signup</h1>
-      </div>
-       {error.isError && <div className="alert error-dailog">{error.errorMessage}</div>}
-      <div className="login-signup-form">
-        <div className="form-group">
-          <label htmlFor="name">Name</label>
-          <input
-            type="name"
-            className="form-control"
-            id="name"
-            placeholder="Enter name"
-            name="name"
-            value={userDetails.name}
-            onChange={handleChange}
-          />
-        </div>
-        <div className="form-group">
-          <label htmlFor="email">email</label>
-          <input
-            type="email"
-            className="form-control"
-            id="email"
-            placeholder="Enter email"
-            name="email"
-            value={userDetails.email}
-            onChange={handleChange}
-          />
-        </div>
-        <div className="form-group">
-          <label htmlFor="password">Password</label>
-          <input
-            type="password"
-            className="form-control"
-            id="password"
-            placeholder="Enter Password"
-            name="password"
-            value={userDetails.password}
-            onChange={handleChange}
-          />
-        </div>
-        <div className="form-group">
-          <label htmlFor="confirm_password">confirm password</label>
-          <input
-            type="password"
-            className="form-control"
-            id="confirm_password"
-            placeholder="Enter Confirm Password"
-            name="confirm_password"
-            value={userDetails.confirm_password}
-            onChange={handleChange}
-          />
-        </div>
-        <Button
-          variant="contained"
-          onClick={handleSubmit}
-          style={{ marginTop: "20px" }}
-        >
-          Sign up
-        </Button>
-      </div>
+return (
+  <div className="login-signup">
+    <div className="header">
+      <h1 style={{color:"darkgreen"}}>Signup</h1>
     </div>
-  );
+     {error.isError && <div className="alert error-dailog">{error.errorMessage}</div>}
+    <div className="login-signup-form">
+      <div className="form-group">
+        <label htmlFor="name">Name</label>
+        <input
+          type="name"
+          className="form-control"
+          id="name"
+          placeholder="Enter name"
+          name="name"
+          style={{backgroundColor:"lightblue"}}
+          value={userDetails.name}
+          onChange={handleChange}
+        />
+      </div>
+      <div className="form-group">
+        <label htmlFor="email">email</label>
+        <input
+          type="email"
+          className="form-control"
+          id="email"
+          placeholder="Enter email"
+          name="email"
+          style={{backgroundColor:"lightblue"}}
+          value={userDetails.email}
+          onChange={handleChange}
+        />
+      </div>
+      <div className="form-group">
+        <label htmlFor="password">Password</label>
+        <input
+          type="password"
+          className="form-control"
+          id="password"
+          placeholder="Enter Password"
+          name="password"
+          style={{backgroundColor:"lightblue"}}
+          value={userDetails.password}
+          onChange={handleChange}
+        />
+      </div>
+      <div className="form-group">
+        <label htmlFor="confirm_password">confirm password</label>
+        <input
+          type="password"
+          className="form-control"
+          id="confirm_password"
+          placeholder="Enter Confirm Password"
+          name="confirm_password"
+          style={{backgroundColor:"lightblue"}}
+          value={userDetails.confirm_password}
+          onChange={handleChange}
+        />
+      </div>
+      <Button
+        variant="contained"
+        onClick={handleSubmit}
+        style={{ marginTop: "20px" }}
+      >
+        Sign up
+      </Button>
+    </div>
+  </div>
+);
 }
 
 export default Signup;
