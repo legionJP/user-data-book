@@ -18,28 +18,35 @@ const Header = (props) => {
       <div
         className="nav"
         style={{
+          alignItems:"center",
           height: "50px",
           boxShadow:
             "rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px",
         }}
       >
-        <div className="nav-left" onClick={handleClick}>
-          <span style={{ fontSize: "30px", cursor: "pointer" }}>
-            User Data Book
-          </span>
-        </div>
-        <div
-          className="nav-right"
-          style={{ alignItems: "center", justifyContent: "flex-end" }}
-        >
+       
+       <div>
           <span
             style={{ fontSize: "15px", display: "flex", alignItems: "center" }}
           >
             <AccountCircleIcon />
             {GetUserNameFromToken()}&nbsp;&nbsp;&nbsp;
           </span>
+        </div>
+
+        <div className="nav-left" onClick={handleClick}>
+          <span style={{ fontSize: "30px", cursor: "pointer", color: "darkblue" }}>
+            User Data Book
+          </span>
+        </div>
+
+        <div
+          className="nav-right"
+          style={{ alignItems: "center", justifyContent: "flex-end", width: "auto" }}
+        >
+
           <div onClick={handleLogout}>
-            <Button style={{ width:"auto",color:"black"}} endIcon={<LogoutIcon/>}>
+            <Button style={{ width: "auto", color: "black" }} endIcon={<LogoutIcon />}>
               Logout
             </Button>
             &nbsp;&nbsp;
@@ -51,4 +58,4 @@ const Header = (props) => {
   );
 };
 
-export default Header;
+export default Header;  
